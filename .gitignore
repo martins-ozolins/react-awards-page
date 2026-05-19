@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .vite
+Dockerfile
+.dockerignore
 
 # Editor directories and files
 .vscode/*
