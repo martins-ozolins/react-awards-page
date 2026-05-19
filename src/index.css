@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #073b39;
+  --color-brand-slime: #bef19f;
+}
+
+:root {
+  --font-sans-primary: "Jost", ui-sans-serif, system-ui;
+}
+
+html,
+body {
+  font-family: var(--font-sans-primary);
+}
+
+@keyframes footer-wordmark-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-130vw);
+  }
+}
+
+.animate-footer-wordmark-scroll {
+  animation: footer-wordmark-scroll 35s linear infinite;
+}
