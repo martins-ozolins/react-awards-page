@@ -1,3 +1,5 @@
+import { GoChevronDown } from "react-icons/go";
+
 interface AwardFiltersProps {
   groups: string[];
   selectedGroup: string;
@@ -44,15 +46,7 @@ export function AwardFilters({
           })}
         </select>
 
-        <svg
-          className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2 text-brand-dark"
-          viewBox="0 0 20 20"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        >
-          <path d="M5 7.5L10 12.5L15 7.5" />
-        </svg>
+        <GoChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2 text-brand-dark" />
       </div>
     </section>
   );
